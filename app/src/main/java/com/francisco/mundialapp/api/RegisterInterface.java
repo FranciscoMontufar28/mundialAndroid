@@ -1,20 +1,15 @@
 package com.francisco.mundialapp.api;
 
-
-import com.francisco.mundialapp.data.Login;
 import com.francisco.mundialapp.data.Response;
+import com.francisco.mundialapp.data.User;
 
 import retrofit2.Call;
-
 import retrofit2.http.Body;
 import retrofit2.http.POST;
 
 
-public interface UserInterface {
+public interface RegisterInterface {
 
-    @POST("/rest/login")
-    Call<Response> login(@Body Login login);
-
-
-
+    @POST("/rest/addUser")
+    Call<Response> addUser(@Body User user);
 }

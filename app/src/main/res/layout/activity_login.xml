@@ -17,30 +17,32 @@
     tools:context="com.francisco.mundialapp.LoginActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btningresar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Ingresar"
+        android:onClick="@{()->LoginHandler.Login()}"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/btnregistrar"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnregistrar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Registrar"
+        android:onClick="@{()->LoginHandler.Registrar()}"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/btningresar" />
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
+        android:id="@+id/cedula"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -53,7 +55,7 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/clave"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -61,7 +63,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/cedula">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"

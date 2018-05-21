@@ -2,10 +2,6 @@ package com.francisco.mundialapp.data;
 
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by RicardoM on 28/04/2018.
- */
-
 public class Response {
     @SerializedName("success")
     private boolean exitoso;

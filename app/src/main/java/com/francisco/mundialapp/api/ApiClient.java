@@ -3,13 +3,9 @@ package com.francisco.mundialapp.api;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * Created by RicardoM on 28/04/2018.
- */
-
 public class ApiClient {
 
-    public static final String BASE_URL = "http://192.168.0.80:8080";
+    public static final String BASE_URL = "http://192.168.1.55:8080";
     private static Retrofit retrofit = null;
 
     public static Retrofit getClient(){
